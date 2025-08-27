@@ -1,65 +1,97 @@
 import menu from "../assets/shared/icon-hamburger.svg";
+import close from "../assets/shared/icon-close.svg"
 import brandLogo from "../assets/shared/logo.svg";
-import { useState } from "react";
+import { useState} from "react";
+
+const image = [menu, close]
 
 export default function Navbar() {
-  const [show, setShow] = useState(0)
+  const [show, setShow] = useState(null);
+  const [prev, setPrev] = useState(image[0])
+
+  const changeMenu = () => {
+    const currentIndex = image.indexOf(prev)
+    const nextIndex = (currentIndex + 1) % image.length
+    setPrev(image[nextIndex])
+  }
+
+
   return (
     <header>
-      <nav className="navbar px-9  pt-7">
-        <div className="flex-1">
+      <nav className="navbar px-5  pt-7 md:pt-0 md:pr-0 lg:pt-8">
+        <div className="flex-1 ">
           <a href="">
-            <img src={brandLogo} alt="burgermenu" />
+            <img
+              src={brandLogo}
+              alt="brandLogo"
+              className="w-[2.5rem] aspect-square lg:ml-4"
+            />
           </a>
         </div>
+
+        <ul className="nav-line nav-layout md:flex items-center justify-evenly bg-[#ffffff49] text-white  md:h-[5rem] lg:h-[4rem] lg:w-[44rem] w-[39rem] max-md:hidden">
+          <li>
+            <a className="cursor-pointer">
+              <b>00</b>HOME
+            </a>
+          </li>
+          <li>
+            <a className="menu-active cursor-pointer">
+              <b>01</b> DESTINATION
+            </a>
+          </li>
+          <li>
+            <a className="cursor-pointer">
+              <b>02</b>CREW
+            </a>
+          </li>
+          <li>
+            <a className="cursor-pointer">
+              <b>03</b>TECHNOLOGY
+            </a>
+          </li>
+        </ul>
+
         <div className="flex-none relative">
           <button
             className="relative cursor-pointer z-50"
             onClick={() => setShow(!show)}
           >
-            <img src={menu} alt="burgermenu" className="w-[2.3rem]" />
+            <img
+              onClick={changeMenu}
+              src={prev}
+              alt="burgerMenu"
+              className="w-[1.5rem] md:hidden z-50"
+            />
           </button>
           {!show ? null : (
-            <ul className="absolute top-[-2rem] left-[-9.5rem] translate-x-[=100%] duration-1000 bg-base-200 opacity-50 w-56 h-dvh">
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a className="menu-active">Item 2</a>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
-            </ul>
+            <nav className="side-blur absolute top-[-2.1rem] left-[-9.5rem] translate-x-[-18%] bg-[#fdfafa65]  w-60 h-[111dvh]   md:hidden">
+              <ul className="flex flex-col mt-[9rem] ml-[1.5rem] gap-4 text-white">
+                <li>
+                  <a>
+                    <b>00</b>HOME
+                  </a>
+                </li>
+                <li>
+                  <a className="menu-active">
+                    <b>01</b> DESTINATION
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <b>02</b>CREW
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <b>03</b>TECHNOLOGY
+                  </a>
+                </li>
+              </ul>
+            </nav>
           )}
         </div>
       </nav>
     </header>
   );
 }
-
-
-/* <TiThMenu onClick={() => setShow(!show)} className="ham" />;
-{
-  !show ? null : (
-    <Slide>
-      <ul className="nav-link">
-        <a href="#">
-          <li>Collections</li>
-        </a>
-        <a href="#">
-          <li>Men</li>
-        </a>
-        <a href="#">
-          <li>Women</li>
-        </a>
-        <a href="#">
-          <li>About</li>
-        </a>
-        <a href="#">
-          <li>Contact</li>
-        </a>
-      </ul>
-    </Slide>
-  );
-} */
