@@ -8,6 +8,11 @@
 } */
 
 
+html{
+  scroll-behavior: smooth;
+}
+
+
 
 b {
   padding-inline-end: 0.5rem;
@@ -46,21 +51,14 @@ b {
 
 /* sidebar */
 
-.side-blur {
-  z-index: 5;
+
+.side-blur{
+  background-color: rgba(255 255 255 / 30% );
+  backdrop-filter: blur(10px);
 }
 
-.side-blur::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -10px;
-  background-color: rgba(255, 255, 255, 0.151);
-  filter: blur(20px);
-  width: 15rem;
-  /* height: 150dvh; */
-  z-index: -1;
-  -webkit-filter: blur(20px);
+.side-blur{
+  z-index: 20;
 }
 
 .side-blur ul li:hover {
@@ -84,6 +82,11 @@ b {
   background-color: rgba(255, 255, 255, 0.534);
 }
 
+.desk-nav{
+  background-color: rgba(255 255 255 / 30% );
+  backdrop-filter: blur(10px);
+}
+
 @media (width >= 48rem ) {
   .nav-line::before{
     display: none;
@@ -103,21 +106,24 @@ b {
   position: relative;
 }
 
-.nav-layout li:hover:after {
+.nav-layout li a:hover::after{
   content: "";
   display: block;
   position: absolute;
-  top: 3rem;
+  top: 3.5rem;
   width: 100%;
   height: 0.2rem;
   background-color: white;
 }
 
-@media (width >= 64rem) {
-
-  .nav-layout li:hover:after {
-  top: 2.5rem;
-}
+.nav-layout li a.active::after{
+   content: "";
+  display: block;
+  position: absolute;
+  top: 3.5rem;
+  width: 100%;
+  height: 0.2rem;
+  background-color: white;
   
 }
 
@@ -137,4 +143,44 @@ b {
   
   transform: rotate3d(0, 1, 0, 360deg);
 }
+}
+
+.sub-active ul li a.active{
+  height: 3rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid white;
+
+}
+
+.sub-active ul li a:hover{
+  height: 3rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid white;
+  cursor: pointer;
+
+}
+
+
+/* Crew page  */
+
+.caroul-dot a.active{
+  background-color: white;
+
+}
+
+.caroul-dot a:hover{
+  background-color: white;
+  
+}
+
+
+/* Tech page  */
+.tech-btn a.active{
+  background-color: white;
+  color: black;
+}
+
+.tech-btn a:hover{
+  background-color: white;
+  color: black;
 }
