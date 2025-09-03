@@ -76,10 +76,9 @@ b {
   position: absolute;
   left: -33rem;
   display: block;
-  /* width: 38rem; */
   width: 80%;
   height: 1px;
-  background-color: rgba(255, 255, 255, 0.534);
+  background-color: rgba(255, 255, 255, 0.473);
 }
 
 .desk-nav{

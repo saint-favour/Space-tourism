@@ -27,7 +27,7 @@ function App() {
         <Route path="Crew" element={<CrewOne />} />
 
         {/* 01 Destination */}
-        <Route path="Destination" element={<Moon />} />
+        {/* <Route path="Destination" element={<Moon />} /> */}
         <Route path="Destination" element={<Moon />} />
         <Route path="Destination/moon" element={<Moon />} />
         <Route path="Destination/mars" element={<Mars />} />

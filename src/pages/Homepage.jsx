@@ -1,6 +1,10 @@
 import Navbar from "../component/NavBar";
+import { useNavigate } from "react-router-dom";
 
 function Homepage() {
+const navigate = useNavigate();
+
+
   return (
     <main className="min-h-screen bg-[url(./assets/home/background-home-mobile.jpg)] bg-cover bg-no-repeat bg-position-[center_top_0rem] md:bg-[url(./assets/home/background-home-tablet.jpg)]  lg:bg-[url(./assets/home/background-home-desktop.jpg)] lg:bg-cover ">
       <Navbar />
@@ -19,9 +23,12 @@ function Homepage() {
             world experience!
           </p>
         </div>
-        <div className=" ex-layout flex justify-center  items-center  w-40 aspect-square bg-white text-[1.5rem] text-center  mt-15 mb-12  rounded-[50%] md:w-50">
+        <button
+          onClick={() => navigate("/Destination")}
+          className=" ex-layout flex justify-center  items-center  w-40 aspect-square bg-white text-[1.5rem] text-center  mt-15 mb-12  rounded-[50%] md:w-50"
+        >
           EXPLORE
-        </div>
+        </button>
       </section>
     </main>
   );

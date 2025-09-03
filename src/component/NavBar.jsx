@@ -21,13 +21,13 @@ export default function Navbar() {
     <header>
       <nav className="navbar text-[1rem] px-5  pt-7 md:pt-0 md:pr-0 lg:pt-8 font-[barlow_condensed]">
         <div className="flex-1 ">
-          <a href="">
+          <Link to="/">
             <img
               src={brandLogo}
               alt="brandLogo"
               className="w-[2.5rem] aspect-square lg:ml-4"
             />
-          </a>
+          </Link>
         </div>
 
         <ul className="nav-line nav-layout md:flex items-center justify-evenly desk-nav text-white md:w-[48rem]  md:h-[6rem] lg:h-[6rem] lg:w-[46rem]  max-md:hidden">
