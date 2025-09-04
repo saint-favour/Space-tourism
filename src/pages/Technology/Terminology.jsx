@@ -10,7 +10,7 @@ function Terminology() {
     <main className="min-h-screen bg-[url(./assets/technology/background-technology-mobile.jpg)] bg-cover bg-no-repeat md:bg-[url(./assets/technology/background-technology-tablet.jpg)] md:bg-cover md:bg-no-repeat lg:bg-[url(./assets/technology/background-technology-desktop.jpg)] lg:bg-cover lg:bg-no-repeat">
       <Navbar />
       <h1 className="text-white text-center text-[1rem] font-[barlow_condensed] tracking-[15%] mt-[1rem] pt-[1rem] mb-[1rem] pb-[1rem] md:text-left md:text-[1.3rem] lg:text-[1.8rem] lg:tracking-[4px] md:pl-[2rem] lg:pl-[2.5rem] lg:ml-[2rem]">
-        <span className="text-green-600 pr-[1rem]">03</span> SPACE LAUNCH 101
+        <span className="text-[#ffffff73] pr-[1rem]">03</span> SPACE LAUNCH 101
       </h1>
       <section className=" lg:flex lg:flex-row-reverse lg:justify-between">
         <picture>

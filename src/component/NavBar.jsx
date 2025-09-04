@@ -19,6 +19,7 @@ export default function Navbar() {
 
   return (
     <header>
+      {/* normal side bar */}
       <nav className="navbar text-[1rem] px-5  pt-7 md:pt-0 md:pr-0 lg:pt-8 font-[barlow_condensed]">
         <div className="flex-1 ">
           <Link to="/">
@@ -65,8 +66,9 @@ export default function Navbar() {
               className="w-[1.5rem] h-[1.4rem] md:hidden z-50"
             />
           </button>
+          {/* side bar  */}
           {!show ? null : (
-            <nav className="side-blur absolute top-[-2.1rem] left-[-9.5rem] translate-x-[-18%] w-[15.9rem] h-[114.5dvh]   md:hidden">
+            <nav className="side-blur fixed top-[-2.1rem] right-[-2.9rem] translate-x-[-18%] w-[15.9rem] h-[114.5dvh]   md:hidden">
               <ul className="flex flex-col  mt-[9rem] pt-[4rem] ml-[1.5rem] gap-6 text-white">
                 <li>
                   <NavLink to="/">
@@ -84,7 +86,7 @@ export default function Navbar() {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink>
+                  <NavLink to="/Technology">
                     <b>03</b>TECHNOLOGY
                   </NavLink>
                 </li>

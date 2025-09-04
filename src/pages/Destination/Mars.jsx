@@ -1,5 +1,5 @@
 import Navbar from "../../component/NavBar";
-import moonImage from "../../assets/destination/image-mars.png"
+import moonImage from "../../assets/destination/image-mars.png";
 import SubNavbar from "../../component/SubNavbar";
 function Mars() {
   return (
@@ -7,7 +7,7 @@ function Mars() {
       <Navbar />
       <section className=" px-4 mt-[3rem] md:h-dvh">
         <h1 className="text-white font-[barlow_condensed] text-[1rem] text-center tracking-[15%] mb-[3rem] md:text-[1.7rem] md:pl-[1.2rem] md:text-left lg:pl-[1.7rem]">
-          <span className=" text-[white] font-bold font-[barlow_condensed] tracking-[4.72px] pr-[1rem] md:text-[1.6rem] lg:pl-[4.5rem] lg:text-[1.7rem]">
+          <span className=" text-[#ffffff73] font-bold font-[barlow_condensed] tracking-[4.72px] pr-[1rem] md:text-[1.6rem] lg:pl-[4.5rem] lg:text-[1.7rem]">
             01
           </span>
           PICK YOUR DESTINATION

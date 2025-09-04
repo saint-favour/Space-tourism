@@ -6,13 +6,15 @@ import crewImage4 from "../../assets/crew/image-anousheh-ansari.png";
 import Carousel from "../../component/Carousel";
 
 function CrewOne() {
+  const carousel = Carousel();
+
   return (
     <>
       <main className="bg-[url(./assets/crew/background-crew-mobile.jpg)] bg-cover bg-no-repeat md:bg-[url(./assets/crew/background-crew-tablet.jpg)] md:bg-cover md:bg-no-repeat lg:bg-[url(./assets/crew/background-crew-desktop.jpg)] lg:bg-cover lg:bg-no-repeat ">
         <Navbar />
         <div className="mt-[2rem] pt-[1rem]">
           <h1 className="text-white font-[barlow_condensed] text-[1rem] text-center tracking-[15%] mb-[3rem] md:text-[1.3rem] md:pl-[1.2rem] md:text-left lg:pl-[1.7rem] lg:text-[1.8rem] lg:tracking-[4px]">
-            <span className=" text-[white] font-bold font-[barlow_condensed] tracking-[4.72px] pr-[0.9rem] md:text-[1.6rem] lg:pl-[3.2rem] lg:text-[1.7rem]">
+            <span className=" text-[#ffffff73] font-bold font-[barlow_condensed] tracking-[4.72px] pr-[0.9rem] md:text-[1.6rem] lg:pl-[3.2rem] lg:text-[1.7rem]">
               02
             </span>
             MEET YOUR CREW
@@ -35,7 +37,7 @@ function CrewOne() {
                     space for the third time as commander of Crew Dragon Demo-2
                   </p>
 
-                  <Carousel />
+                  {carousel}
                 </div>
                 <div className="flex justify-center lg:justify-start lg:pl-[3rem] ">
                   <img
@@ -59,13 +61,13 @@ function CrewOne() {
                     MARK SHUTTLEWORTH
                   </h2>
                   <p className="text-[#D0D6F9] text-center text-[0.94rem] leading-[180%]  font-[Barlow] w-[20.5rem] md:w-[32.1rem] md:text-[1rem]  lg:text-left lg:w-[33.7rem]  lg:text-[1.13rem]">
-                    Mark Richard Shuttleworth  is the founder and the CEO of Canonical, the
-                    company behind the Linux-based Ubuntu operating system.
-                    Shuttleworth became the first South African to travel to space as a 
-                    space tourist.
+                    Mark Richard Shuttleworth is the founder and the CEO of
+                    Canonical, the company behind the Linux-based Ubuntu
+                    operating system. Shuttleworth became the first South
+                    African to travel to space as a space tourist.
                   </p>
 
-                  <Carousel />
+                  {carousel}
                 </div>
                 <div className="flex justify-center lg:justify-start lg:pl-[3rem] ">
                   <img
@@ -89,13 +91,14 @@ function CrewOne() {
                     VICTOR GLOVER
                   </h2>
                   <p className="text-[#D0D6F9] text-center text-[0.94rem] leading-[180%]  font-[Barlow] w-[20.5rem] md:w-[32.1rem] md:text-[1rem]  lg:text-left lg:w-[33.7rem]  lg:text-[1.13rem]">
-                    Pilot on the first operational flight of the SpaceX Crew Dragon to the
-                    international space station. Glover is a commander in the U.S Navy 
-                    where he pilots an F/A-18. He was a crew member of Expedition 64, 
-                    and served as a station system flight engineer. 
+                    Pilot on the first operational flight of the SpaceX Crew
+                    Dragon to the international space station. Glover is a
+                    commander in the U.S Navy where he pilots an F/A-18. He was
+                    a crew member of Expedition 64, and served as a station
+                    system flight engineer.
                   </p>
 
-                  <Carousel />
+                  {carousel}
                 </div>
                 <div className="flex justify-center lg:justify-start lg:pl-[3rem] ">
                   <img
@@ -119,12 +122,13 @@ function CrewOne() {
                     ANOUSHEH ANSARI
                   </h2>
                   <p className="text-[#D0D6F9] text-center text-[0.94rem] leading-[180%]  font-[Barlow] w-[20.5rem] md:w-[32.1rem] md:text-[1rem]  lg:text-left lg:w-[33.7rem]  lg:text-[1.13rem]">
-                    Aousheh Ansari is an Iranian American engineer and co-founder of 
-                    Prodea Systems. Ansari was the fourth self-funded space tourist, the 
-                    first self-founded woman to fly to the ISS, and the first Iranian in space.
+                    Aousheh Ansari is an Iranian American engineer and
+                    co-founder of Prodea Systems. Ansari was the fourth
+                    self-funded space tourist, the first self-founded woman to
+                    fly to the ISS, and the first Iranian in space.
                   </p>
 
-                  <Carousel />
+                  {carousel}
                 </div>
                 <div className="flex justify-center lg:justify-start lg:pl-[3rem] ">
                   <img
