@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: ([https://saint-favour.github.io/](https://spacetouris.netlify.app/))
+- Live Site URL: ([https://spacetouris.netlify.app/])
 
 ### Built with
 - Semantic HTML5 markup
