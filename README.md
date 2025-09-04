@@ -13,11 +13,11 @@
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+
 
 ## Overview
 
-look thorough all your favourite countries and more!
+look thorough space and explore the terminologies in regards to it!
 
 ### The challenge
 
