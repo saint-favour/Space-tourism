@@ -1,8 +1,22 @@
+# FMC Space Tourism 
+  this is a solution to a Frontend Mentor Challagened 
+
+# Table of Content 
+-[Overview](#
+
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## The Challange 
+To bulid a mulitiy page complex website as close to the design as possible.  
 
-Currently, two official plugins are available:
+## External Rescource 
+- Google fonts
+
+## 
+
+<img width="1347" height="680" alt="image" src="https://github.com/user-attachments/assets/ebc2adfa-59b0-4288-8ec6-bef10b69eab7" />
+
+
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
