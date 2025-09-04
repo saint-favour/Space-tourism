@@ -1,26 +1,64 @@
 # FMC Space Tourism 
   this is a solution to a Frontend Mentor Challagened 
 
-# Table of Content 
--[Overview](#
+## Table of contents
 
-# React + Vite
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-## The Challange 
-To bulid a mulitiy page complex website as close to the design as possible.  
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-## External Rescource 
-- Google fonts
+## Overview
 
-## 
+look thorough all your favourite countries and more!
 
+### The challenge
+
+Users should be able to:
+
+- Browse through the various pages
+- interact and learn about the infinity and beyound
+- To bulid a mulitiy page complex website as close to the design as possible.  
+
+### Screenshot
 <img width="1347" height="680" alt="image" src="https://github.com/user-attachments/assets/ebc2adfa-59b0-4288-8ec6-bef10b69eab7" />
 
 
+### Links
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Live Site URL: ([https://saint-favour.github.io/](https://spacetouris.netlify.app/))
 
-## Expanding the ESLint configuration
+### Built with
+- Semantic HTML5 markup
+- React + Vite
+- React-Router
+- tailwind
+- DaisyUI Libiary 
+- CSS flexBox
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+### What I learned
+-Routing of pages and its various ilk.
+-keeping to accurate measurements
+
+### Useful resources
+
+- [ resource 1]([https://daisyui.com/)  - For components, don't always have to reinvent the wheel.
+
+## Author
+ Saint-favour Amaechi
+ 
+- Frontend Mentor - [@saint-favour](https://www.frontendmentor.io/profile/saint-favour)
+- Twitter/X - [@saintAmaechi](https://x.com/SaintAmaechi) 
+
+## Acknowledgments
+
+All glory goes to GOD, and second to my Mentor who always finds time for me.
+
